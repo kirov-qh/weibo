@@ -1,0 +1,129 @@
+{"CreatedTime":"2017-09-19 17:28",
+ "Content": 
+	"{"card_type": 9,
+	"itemid": "1076032603926877_-_4153737490721504",
+	"scheme": "https://m.weibo.cn/status/FmxXn31Ha?mblogid=FmxXn31Ha&luicode=10000011&lfid=1076032603926877", # 该微博的链接
+	
+	"mblog":
+		{"favorited": false,
+		"mblogtype": 0,
+		"is_paid": false,
+		"retweeted_status":
+			{"reposts_count": 1046,
+			"text": "你是哪种类型的吃货？ ​​​", #　原微博的文本内容
+			"more_info_type": 0,
+			"visible":
+				{"type": 0,
+				"list_id": 0
+				},
+			"bmiddle_pic": "http://wx4.sinaimg.cn/bmiddle/a0c74f04gy1fjop8jvww5j20hs0hsjth.jpg",
+			"id": "4153650261787113", # 原微博ID
+			"thumbnail_pic": "http://wx4.sinaimg.cn/thumbnail/a0c74f04gy1fjop8jvww5j20hs0hsjth.jpg",
+			"mblog_vip_type": 0,
+			"mid": "4153650261787113",
+			"source": "微博 weibo.com",
+			"attitudes_count": 582,
+			"favorited": false,
+			"original_pic": "	",
+			"bid": "FmvGG7uUp",
+			"idstr": "4153650261787113",
+			"user":
+				{"verified": true,　#　认证状态
+				"screen_name": "999道私房菜", # 原博主昵称
+				"gender": "f",
+				"follow_count": 62, #　原博主的关注数
+				"cover_image_phone": "https://tva1.sinaimg.cn/crop.0.0.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+				"follow_me": false,
+				"profile_image_url": "https://tva3.sinaimg.cn/crop.0.0.180.180.180/a0c74f04jw1e8qgp5bmzyj2050050aa8.jpg",
+				"verified_reason": "知名美食博主",　 # 认证信息
+				"followers_count": 13826935, 	# 原博主粉丝数
+				"verified_type_ext": 1,	#
+				"verified_type": 0,
+				"mbrank": 7,
+				"following": false,
+				"statuses_count": 2642,
+				"urank": 44,
+				"mbtype": 12,
+				"id": 2697416452, # 原博主的ID
+				"profile_url": "https://m.weibo.cn/u/2697416452?uid=2697416452&luicode=10000011&lfid=1076032603926877",
+				"description": "每天一道私房菜，一起吃遍天下美食！" # 原博主的个人描述
+				},
+			"isLongText": false,
+			"textLength": 20,
+			"is_paid": false,
+			"pics":  # 图片们的信息
+				[
+					{"url": "https://wx4.sinaimg.cn/orj360/a0c74f04gy1fjop8jvww5j20hs0hsjth.jpg",
+					"geo":
+						{"width": 360,
+						"croped": false,
+						"height": 360
+						},
+					"large":
+						{"url": "https://wx4.sinaimg.cn/large/a0c74f04gy1fjop8jvww5j20hs0hsjth.jpg",
+						"geo":
+							{"width": "640",
+							"croped": false,
+							"height": "640"
+							},
+						"size": "large"
+						},
+					"pid": "a0c74f04gy1fjop8jvww5j20hs0hsjth",
+					"size": "orj360"
+					},
+					{"url": "https://wx3.sinaimg.cn/orj360/a0c74f04gy1fjop8jtw5cj20hs0hs0ut.jpg", "geo": {"width": 360, "croped": false, "height": 360}, "large": {"url": "https://wx3.sinaimg.cn/large/a0c74f04gy1fjop8jtw5cj20hs0hs0ut.jpg", "geo": {"width": "640", "croped": false, "height": "640"}, "size": "large"}, "pid": "a0c74f04gy1fjop8jtw5cj20hs0hs0ut", "size": "orj360"},
+					{"url": "https://wx1.sinaimg.cn/orj360/a0c74f04gy1fjop8jty9dj20hs0hstah.jpg", "geo": {"width": 360, "croped": false, "height": 360}, "large": {"url": "https://wx1.sinaimg.cn/large/a0c74f04gy1fjop8jty9dj20hs0hstah.jpg", "geo": {"width": "640", "croped": false, "height": "640"}, "size": "large"}, "pid": "a0c74f04gy1fjop8jty9dj20hs0hstah", "size": "orj360"},
+					{"url": "https://wx1.sinaimg.cn/orj360/a0c74f04gy1fjop8jvp9oj20hs0hstao.jpg", "geo": {"width": 360, "croped": false, "height": 360}, "large": {"url": "https://wx1.sinaimg.cn/large/a0c74f04gy1fjop8jvp9oj20hs0hstao.jpg", "geo": {"width": "640", "croped": false, "height": "640"}, "size": "large"}, "pid": "a0c74f04gy1fjop8jvp9oj20hs0hstao", "size": "orj360"},
+					{"url": "https://wx1.sinaimg.cn/orj360/a0c74f04gy1fjop8jtzbjj20hs0hs765.jpg", "geo": {"width": 360, "croped": false, "height": 360}, "large": {"url": "https://wx1.sinaimg.cn/large/a0c74f04gy1fjop8jtzbjj20hs0hs765.jpg", "geo": {"width": "640", "croped": false, "height": "640"}, "size": "large"}, "pid": "a0c74f04gy1fjop8jtzbjj20hs0hs765", "size": "orj360"},
+					{"url": "https://wx1.sinaimg.cn/orj360/a0c74f04gy1fjop8jtvkzj20hs0hs763.jpg", "geo": {"width": 360, "croped": false, "height": 360}, "large": {"url": "https://wx1.sinaimg.cn/large/a0c74f04gy1fjop8jtvkzj20hs0hs763.jpg", "geo": {"width": "640", "croped": false, "height": "640"}, "size": "large"}, "pid": "a0c74f04gy1fjop8jtvkzj20hs0hs763", "size": "orj360"},
+					{"url": "https://wx4.sinaimg.cn/orj360/a0c74f04gy1fjop8k4150j20hs0hs762.jpg", "geo": {"width": 360, "croped": false, "height": 360}, "large": {"url": "https://wx4.sinaimg.cn/large/a0c74f04gy1fjop8k4150j20hs0hs762.jpg", "geo": {"width": "640", "croped": false, "height": "640"}, "size": "large"}, "pid": "a0c74f04gy1fjop8k4150j20hs0hs762", "size": "orj360"},
+					{"url": "https://wx4.sinaimg.cn/orj360/a0c74f04gy1fjop8kb7u8j20hs0hs765.jpg", "geo": {"width": 360, "croped": false, "height": 360}, "large": {"url": "https://wx4.sinaimg.cn/large/a0c74f04gy1fjop8kb7u8j20hs0hs765.jpg", "geo": {"width": "640", "croped": false, "height": "640"}, "size": "large"}, "pid": "a0c74f04gy1fjop8kb7u8j20hs0hs765", "size": "orj360"},
+					{"url": "https://wx4.sinaimg.cn/orj360/a0c74f04gy1fjop8k46kyj20hs0hsdi3.jpg", "geo": {"width": 360, "croped": false, "height": 360}, "large": {"url": "https://wx4.sinaimg.cn/large/a0c74f04gy1fjop8k46kyj20hs0hsdi3.jpg", "geo": {"width": "640", "croped": false, "height": "640"}, "size": "large"}, "pid": "a0c74f04gy1fjop8k46kyj20hs0hsdi3", "size": "orj360"}
+				],
+			"comments_count": 613, # 原微博的评论数
+			"created_at": "7小时前" #　原微博的创建时间
+			},
+
+	    # 之后就是转发的
+
+		"reposts_count": 0,     # 转发后的被转发数
+		"text": "都喜欢 我可能是猪",　# 转发文本
+		"created_at": "1小时前",	# 转发时间
+		"more_info_type": 0,	#　
+		"visible": 
+			{"type": 0, 
+			"list_id": 0
+			}, 
+		"idstr": "4153737490721504",  # 转发后的微博的ID
+		"mid": "4153737490721504",
+		"source": "iPhone 7",  #　转发设备
+		"attitudes_count": 0,   # 点攒数
+		"comments_count": 0,	# 评论数
+		"user": 
+			{"verified": false,
+			"screen_name": "biu_zzzzzzzzz", 
+			"gender": "f",
+			"follow_count": 325,
+			"cover_image_phone": "https://tva4.sinaimg.cn/crop.0.0.0.640.640/6ce2240djw1e9uwue857ij20hs0hsjuk.jpg",
+			"follow_me": false,
+			"profile_image_url": "https://tvax2.sinaimg.cn/crop.0.0.750.750.180/9b34c55dly8fi02jpop4bj20ku0kumyb.jpg",
+			"followers_count": 330,
+			"verified_type": 220,
+			"mbrank": 0, 
+			"following": false,
+			"statuses_count": 7, 
+			"urank": 31,
+			"mbtype": 0, 
+			"id": 2603926877,　# 当前博主的ID
+			"profile_url": "https://m.weibo.cn/u/2603926877?uid=2603926877&luicode=10000011&lfid=1076032603926877", #　当前博主的个人主页链接
+			"description": "呵呵" # 当前博主的个人描述
+			}, 
+		"mblog_vip_type": 0, 
+		"bid": "FmxXn31Ha",
+		"raw_text": "都喜欢 我可能是猪",
+		"id": "4153737490721504", 
+		"isLongText": false
+		}, 
+	"show_type": 0
+	}"
+}

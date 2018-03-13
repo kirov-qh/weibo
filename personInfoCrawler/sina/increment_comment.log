@@ -1,0 +1,584 @@
+2017-09-22 16:13:34 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: sina)
+2017-09-22 16:13:34 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'RETRY_TIMES': 3, 'BOT_NAME': 'sina', 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408, 414, 10060, 10061], 'LOG_FILE': 'increment_comment.log'}
+2017-09-22 16:13:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-09-22 16:13:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'sina.middlewares.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-22 16:13:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-22 16:13:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.TutorialPipeline']
+2017-09-22 16:13:34 [scrapy.core.engine] INFO: Spider opened
+2017-09-22 16:13:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-22 16:13:34 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-09-22 16:13:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2422828740> (referer: None)
+2017-09-22 16:13:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2603926877> (referer: None)
+2017-09-22 16:13:48 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-09-22 16:13:48 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "E:\sinaScrapy\sina\sina\spiders\infoSpider.py", line 114, in start_requests
+    time.sleep(request_interval)
+IOError: [Errno 4] Interrupted function call
+2017-09-22 16:13:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1583089553> (referer: None)
+2017-09-22 16:13:48 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-09-22 16:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2803080370> (referer: None)
+2017-09-22 16:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2104257205> (referer: None)
+2017-09-22 16:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1498252507> (referer: None)
+2017-09-22 16:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2691144174> (referer: None)
+2017-09-22 16:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1806928880> (referer: None)
+2017-09-22 16:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2275825671> (referer: None)
+2017-09-22 16:13:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2459151000> (referer: None)
+2017-09-22 16:13:50 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9608,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 65134,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2017, 9, 22, 8, 13, 50, 595000),
+ 'log_count/DEBUG': 11,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'request_depth_max': 1,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 20,
+ 'scheduler/enqueued/memory': 20,
+ 'start_time': datetime.datetime(2017, 9, 22, 8, 13, 34, 843000)}
+2017-09-22 16:13:50 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2017-09-22 16:14:04 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: sina)
+2017-09-22 16:14:04 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'RETRY_TIMES': 3, 'BOT_NAME': 'sina', 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408, 414, 10060, 10061], 'LOG_FILE': 'increment_comment.log'}
+2017-09-22 16:14:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-09-22 16:14:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'sina.middlewares.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-22 16:14:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-22 16:14:04 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.TutorialPipeline']
+2017-09-22 16:14:04 [scrapy.core.engine] INFO: Spider opened
+2017-09-22 16:14:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-22 16:14:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-09-22 16:14:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2422828740> (referer: None)
+2017-09-22 16:14:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2603926877> (referer: None)
+2017-09-22 16:14:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1583089553> (referer: None)
+2017-09-22 16:14:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2275825671> (referer: None)
+2017-09-22 16:14:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2104257205> (referer: None)
+2017-09-22 16:14:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1806928880> (referer: None)
+2017-09-22 16:14:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1886182867> (referer: None)
+2017-09-22 16:14:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2691144174> (referer: None)
+2017-09-22 16:14:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2803080370> (referer: None)
+2017-09-22 16:14:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2603926877/info> (referer: https://weibo.cn/u/2603926877)
+2017-09-22 16:14:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2422828740/info> (referer: https://weibo.cn/u/2422828740)
+2017-09-22 16:14:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1937663244> (referer: None)
+2017-09-22 16:14:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1583089553/info> (referer: https://weibo.cn/u/1583089553)
+2017-09-22 16:14:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1790381733> (referer: None)
+2017-09-22 16:14:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2459151000> (referer: None)
+2017-09-22 16:14:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1806928880/info> (referer: https://weibo.cn/u/1806928880)
+2017-09-22 16:14:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1498252507> (referer: None)
+2017-09-22 16:14:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2275825671/info> (referer: https://weibo.cn/u/2275825671)
+2017-09-22 16:14:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1885745905> (referer: None)
+2017-09-22 16:14:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2603926877/info>
+{'birthday': [u'2015-12-14'],
+ 'conNum': 330,
+ 'crawlTime': '2017-09-22 16:14:20',
+ 'fansNum': 325,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tvax2.sinaimg.cn/crop.0.0.750.750.180/9b34c55dly8fi02jpop4bj20ku0kumyb.jpg',
+ 'marriage': [],
+ 'nickName': [u'biu_zzzzzzzzz'],
+ 'place': [u'\u6d77\u5916 \u6fb3\u5927\u5229\u4e9a'],
+ 'sexori': [],
+ 'signature': [u'\u5475\u5475'],
+ 'uid': '2603926877\n',
+ 'weiboNum': 7}
+2017-09-22 16:14:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2422828740/info>
+{'birthday': [u'1990-02-02'],
+ 'conNum': 153,
+ 'crawlTime': '2017-09-22 16:14:20',
+ 'fansNum': 401,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva3.sinaimg.cn/crop.0.0.1002.1002.180/90696ec4jw8f9lj81x5brj20ru0ruq6g.jpg',
+ 'marriage': [],
+ 'nickName': [u'Mr\u4e0d\u60f3\u9003'],
+ 'place': [u'\u4e0a\u6d77 \u6d66\u4e1c\u65b0\u533a'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '2422828740\n',
+ 'weiboNum': 960}
+2017-09-22 16:14:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2691144174/info> (referer: https://weibo.cn/u/2691144174)
+2017-09-22 16:14:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1886182867/info> (referer: https://weibo.cn/u/1886182867)
+2017-09-22 16:14:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2104257205/info> (referer: https://weibo.cn/u/2104257205)
+2017-09-22 16:14:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://weibo.cn/u/2275825671?featurecode=20000320&luicode=20000174&lfid=hotword&rand=706091> from <GET https://weibo.cn/u/1052087000>
+2017-09-22 16:14:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1583089553/info>
+{'birthday': [u'1989-12-21'],
+ 'conNum': 493,
+ 'crawlTime': '2017-09-22 16:14:21',
+ 'fansNum': 4779,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva2.sinaimg.cn/crop.0.0.180.180.180/5e5c0791jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u5927\u53d4\u79c0\u9038'],
+ 'place': [u'\u4e0a\u6d77 \u5362\u6e7e\u533a'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '1583089553\n',
+ 'weiboNum': 7646}
+2017-09-22 16:14:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1937663244/info> (referer: https://weibo.cn/u/1937663244)
+2017-09-22 16:14:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2803080370/info> (referer: https://weibo.cn/u/2803080370)
+2017-09-22 16:14:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2238645064> (referer: None)
+2017-09-22 16:14:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1806928880/info>
+{'birthday': [u'1989-03-23'],
+ 'conNum': 39,
+ 'crawlTime': '2017-09-22 16:14:22',
+ 'fansNum': 74,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva4.sinaimg.cn/crop.0.0.180.180.180/6bb38bf0jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'VickeyYu\u5a77'],
+ 'place': [u'\u53f0\u6e7e \u53f0\u5317\u5e02'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '1806928880\n',
+ 'weiboNum': 476}
+2017-09-22 16:14:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2275825671/info>
+{'birthday': [u'1994-01-18'],
+ 'conNum': 256,
+ 'crawlTime': '2017-09-22 16:14:22',
+ 'fansNum': 369,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva3.sinaimg.cn/crop.0.0.1342.1342.180/87a65807jw8f7lb1p8qtvj211a11a784.jpg',
+ 'marriage': [u'\u604b\u7231\u4e2d'],
+ 'nickName': [u'W_yyyyyyyy'],
+ 'place': [u'\u5e7f\u897f \u5357\u5b81'],
+ 'sexori': [u'\u7537'],
+ 'signature': [u'\u4e00\u5bb6\u4e09\u53e3\U0001f619'],
+ 'uid': '2275825671\n',
+ 'weiboNum': 149}
+2017-09-22 16:14:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2459151000/info> (referer: https://weibo.cn/u/2459151000)
+2017-09-22 16:14:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1790381733/info> (referer: https://weibo.cn/u/1790381733)
+2017-09-22 16:14:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2938904497> (referer: None)
+2017-09-22 16:14:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2275825671?featurecode=20000320&luicode=20000174&lfid=hotword&rand=706091> (referer: None)
+2017-09-22 16:14:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2691144174/info>
+{'birthday': [u'1985-12-25'],
+ 'conNum': 225,
+ 'crawlTime': '2017-09-22 16:14:23',
+ 'fansNum': 178,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva4.sinaimg.cn/crop.0.0.180.180.180/a06799eejw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u62c9\u4e1d\u516c\u4e3b'],
+ 'place': [u'\u4e91\u5357 \u6606\u660e'],
+ 'sexori': [],
+ 'signature': [u'\u540e\u77e5\u540e\u89c9'],
+ 'uid': '2691144174\n',
+ 'weiboNum': 468}
+2017-09-22 16:14:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1886182867/info>
+{'birthday': [u'0001-00-00'],
+ 'conNum': 19,
+ 'crawlTime': '2017-09-22 16:14:23',
+ 'fansNum': 35,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva4.sinaimg.cn/crop.0.0.180.180.180/706cddd3jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u76f8\u4e92\u4f53\u8c05\u5f7c\u6b64\u611f\u6fc0'],
+ 'place': [u'\u5176\u4ed6'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '1886182867\n',
+ 'weiboNum': 141}
+2017-09-22 16:14:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2104257205/info>
+{'birthday': [u'01-01'],
+ 'conNum': 8368,
+ 'crawlTime': '2017-09-22 16:14:22',
+ 'fansNum': 985,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva3.sinaimg.cn/crop.7.0.119.119.180/7d6c6ab5tw1ees5pfbjynj203o03o748.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u4e2d\u56fd\u623f\u5730\u4ea7\u6218\u7565\u5bb6'],
+ 'place': [u'\u5317\u4eac \u4e1c\u57ce\u533a'],
+ 'sexori': [],
+ 'signature': [u'\u8a00\u8bba\u4ec5\u4ee3\u8868\u4e2a\u4eba\u89c2\u70b9\uff01\u4e0d\u4ee3\u8868\u6240\u670d\u52a1\u516c\u53f8\u3002\u66f4\u591a\u4fe1\u606f\u5173\u6ce8\uff1a\u5fae\u4fe1\u53f7\uff1azgfdczlj'],
+ 'uid': '2104257205\n',
+ 'weiboNum': 2187}
+2017-09-22 16:14:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1498252507/info> (referer: https://weibo.cn/u/1498252507)
+2017-09-22 16:14:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2418457784> (referer: None)
+2017-09-22 16:14:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1885745905/info> (referer: https://weibo.cn/u/1885745905)
+2017-09-22 16:14:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1937663244/info>
+{'birthday': [u'0001-00-00'],
+ 'conNum': 213,
+ 'crawlTime': '2017-09-22 16:14:24',
+ 'fansNum': 292,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva2.sinaimg.cn/crop.0.1.1242.1242.180/737e650cjw8ex8udpb72kj20yi0ykjx1.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u67cf\u5927\u8001\u7237'],
+ 'place': [u'\u4e0a\u6d77 \u95f5\u884c\u533a'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '1937663244\n',
+ 'weiboNum': 1774}
+2017-09-22 16:14:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2803080370/info>
+{'birthday': [],
+ 'conNum': 304,
+ 'crawlTime': '2017-09-22 16:14:24',
+ 'fansNum': 5000,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva1.sinaimg.cn/crop.0.0.180.180.180/a7139cb2jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'blue\u5e93\u9732\u9732'],
+ 'place': [u'\u5176\u4ed6'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '2803080370\n',
+ 'weiboNum': 7678}
+2017-09-22 16:14:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1110533652> (referer: None)
+2017-09-22 16:14:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2459151000/info>
+{'birthday': [],
+ 'conNum': 113,
+ 'crawlTime': '2017-09-22 16:14:25',
+ 'fansNum': 211,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva3.sinaimg.cn/crop.0.0.180.180.180/9293aa98jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'nicky_lynn'],
+ 'place': [u'\u5317\u4eac'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '2459151000\n',
+ 'weiboNum': 403}
+2017-09-22 16:14:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1790381733/info>
+{'birthday': [],
+ 'conNum': 32,
+ 'crawlTime': '2017-09-22 16:14:25',
+ 'fansNum': 109,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva1.sinaimg.cn/crop.0.0.540.540.180/6ab70ea5jw8efm61daaxbj20f00f0jsd.jpg',
+ 'marriage': [],
+ 'nickName': [u'dbdb\u7684\u5fae\u535a'],
+ 'place': [u'\u5317\u4eac'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '1790381733\n',
+ 'weiboNum': 364}
+2017-09-22 16:14:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2238645064/info> (referer: https://weibo.cn/u/2238645064)
+2017-09-22 16:14:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2044716387> (referer: None)
+2017-09-22 16:14:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1498252507/info>
+{'birthday': [u'01-01'],
+ 'conNum': 118,
+ 'crawlTime': '2017-09-22 16:14:26',
+ 'fansNum': 176,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva4.sinaimg.cn/crop.0.0.180.180.180/594d84dbjw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u5361\u95e8\u6211'],
+ 'place': [u'\u4e0a\u6d77'],
+ 'sexori': [],
+ 'signature': [u'.'],
+ 'uid': '1498252507\n',
+ 'weiboNum': 360}
+2017-09-22 16:14:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1885745905/info>
+{'birthday': [u'1988-12-06'],
+ 'conNum': 185,
+ 'crawlTime': '2017-09-22 16:14:26',
+ 'fansNum': 275,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva3.sinaimg.cn/crop.0.0.180.180.180/706632f1jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u5708\u513f\u5f88\u6728'],
+ 'place': [u'\u8fbd\u5b81 \u6c88\u9633'],
+ 'sexori': [],
+ 'signature': [u'\u5e0c\u671b\u627e\u4e00\u4e2a\u7231\u4eba\uff0c\u5c31\u90a3\u6837\u4e00\u8d77\u8fc7\u4e00\u8f88\u5b50\u3002'],
+ 'uid': '1885745905\n',
+ 'weiboNum': 776}
+2017-09-22 16:14:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2956737732> (referer: None)
+2017-09-22 16:14:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1052087000/info> (referer: https://weibo.cn/u/2275825671?featurecode=20000320&luicode=20000174&lfid=hotword&rand=706091)
+2017-09-22 16:14:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2938904497/info> (referer: https://weibo.cn/u/2938904497)
+2017-09-22 16:14:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2418457784/info> (referer: https://weibo.cn/u/2418457784)
+2017-09-22 16:14:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2637683437> (referer: None)
+2017-09-22 16:14:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2238645064/info>
+{'birthday': [u'1995-08-28'],
+ 'conNum': 53,
+ 'crawlTime': '2017-09-22 16:14:28',
+ 'fansNum': 144,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva1.sinaimg.cn/crop.0.0.996.996.180/856f0348jw8fb02axlzikj20ro0roq52.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u5427\u5566\u5427\u5566\u5566\u5427\u5566\u5427\u5427\u5566\u5427'],
+ 'place': [u'\u8fbd\u5b81 \u6c88\u9633'],
+ 'sexori': [],
+ 'signature': [u'\u4eba\u751f\u77ed\u77ed\u6570\u5341\u5e74\uff0c\u6700\u8981\u7d27\u7684\u6ee1\u8db3\u81ea\u5df1\u800c\u4e0d\u662f\u8ba8\u597d\u522b\u4eba'],
+ 'uid': '2238645064\n',
+ 'weiboNum': 5}
+2017-09-22 16:14:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2085391023> (referer: None)
+2017-09-22 16:14:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1110533652/info> (referer: https://weibo.cn/u/1110533652)
+2017-09-22 16:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2938904497/info>
+{'birthday': [u'1994-09-19'],
+ 'conNum': 81,
+ 'crawlTime': '2017-09-22 16:14:30',
+ 'fansNum': 99,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tvax3.sinaimg.cn/crop.0.15.750.750.180/af2c1fb1ly8fgjnxrdfdcj20ku0lpmxy.jpg',
+ 'marriage': [],
+ 'nickName': [u'L-qhhhhhhhhhhh'],
+ 'place': [u'\u5176\u4ed6'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '2938904497\n',
+ 'weiboNum': 1}
+2017-09-22 16:14:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2230585971> (referer: None)
+2017-09-22 16:14:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2044716387/info> (referer: https://weibo.cn/u/2044716387)
+2017-09-22 16:14:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2418457784/info>
+{'birthday': [],
+ 'conNum': 3,
+ 'crawlTime': '2017-09-22 16:14:31',
+ 'fansNum': 34,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva3.sinaimg.cn/crop.0.0.2048.2048.180/9026bcb8jw1emcssmxsotj21kw1kw15f.jpg',
+ 'marriage': [],
+ 'nickName': [u'Minnie\u5b9c\u5b9c'],
+ 'place': [u'\u4e0a\u6d77 \u9759\u5b89\u533a'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '2418457784\n',
+ 'weiboNum': 22}
+2017-09-22 16:14:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2956737732/info> (referer: https://weibo.cn/u/2956737732)
+2017-09-22 16:14:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1392955305> (referer: None)
+2017-09-22 16:14:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1110533652/info>
+{'birthday': [],
+ 'conNum': 19,
+ 'crawlTime': '2017-09-22 16:14:32',
+ 'fansNum': 272,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva4.sinaimg.cn/crop.0.0.750.750.180/42316614jw8f6e5vg4vw7j20ku0kudgy.jpg',
+ 'marriage': [],
+ 'nickName': [u'SHR\u53d4'],
+ 'place': [u'\u4e0a\u6d77'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '1110533652\n',
+ 'weiboNum': 19}
+2017-09-22 16:14:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2637683437/info> (referer: https://weibo.cn/u/2637683437)
+2017-09-22 16:14:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2713762311> (referer: None)
+2017-09-22 16:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2044716387/info>
+{'birthday': [u'0001-00-00'],
+ 'conNum': 158,
+ 'crawlTime': '2017-09-22 16:14:33',
+ 'fansNum': 86,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva1.sinaimg.cn/crop.0.0.180.180.180/79dfe563jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'sweety00123'],
+ 'place': [u'\u8fbd\u5b81 \u6c88\u9633'],
+ 'sexori': [],
+ 'signature': [u'\u6069\uff0c\u5176\u5b9e\u6211\u5f88\u597d\uff0c'],
+ 'uid': '2044716387\n',
+ 'weiboNum': 611}
+2017-09-22 16:14:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2085391023/info> (referer: https://weibo.cn/u/2085391023)
+2017-09-22 16:14:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1166642742> (referer: None)
+2017-09-22 16:14:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2956737732/info>
+{'birthday': [u'1989-04-09'],
+ 'conNum': 379,
+ 'crawlTime': '2017-09-22 16:14:34',
+ 'fansNum': 332,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva2.sinaimg.cn/crop.0.0.180.180.180/b03c3cc4jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u5e86\u54e5\u66fc\u821e-\u7834\u6653'],
+ 'place': [u'\u5c71\u4e1c \u6f4d\u574a'],
+ 'sexori': [],
+ 'signature': [u'\u7231\u60c5\u4e0d\u8fc7\u662f\u751f\u6d3b\u7684\u5c41\uff0c\u6298\u78e8\u7740\u6211\u4e5f\u6298\u78e8\u7740\u4f60\u3002'],
+ 'uid': '2956737732\n',
+ 'weiboNum': 949}
+2017-09-22 16:14:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2230585971/info> (referer: https://weibo.cn/u/2230585971)
+2017-09-22 16:14:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2297534883> (referer: None)
+2017-09-22 16:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2637683437/info>
+{'birthday': [u'1990-08-06'],
+ 'conNum': 298,
+ 'crawlTime': '2017-09-22 16:14:35',
+ 'fansNum': 29,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva4.sinaimg.cn/crop.14.0.721.721.180/9d37daedjw8fa0yqn3avwj20ku0k13zk.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u518d\u89c1\u5566\u80d6\u80d6'],
+ 'place': [u'\u9ed1\u9f99\u6c5f \u5927\u5e86'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '2637683437\n',
+ 'weiboNum': 348}
+2017-09-22 16:14:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1392955305/info> (referer: https://weibo.cn/u/1392955305)
+2017-09-22 16:14:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1772191093> (referer: None)
+2017-09-22 16:14:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2085391023/info>
+{'birthday': [],
+ 'conNum': 64,
+ 'crawlTime': '2017-09-22 16:14:36',
+ 'fansNum': 45,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva2.sinaimg.cn/crop.0.0.640.640.180/7c4c8aafjw8ecot8k9csqj20hs0hsdgl.jpg',
+ 'marriage': [],
+ 'nickName': [u'Yolandalonghair'],
+ 'place': [u'\u5317\u4eac'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '2085391023\n',
+ 'weiboNum': 47}
+2017-09-22 16:14:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2713762311/info> (referer: https://weibo.cn/u/2713762311)
+2017-09-22 16:14:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1448858014> (referer: None)
+2017-09-22 16:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2230585971/info>
+{'birthday': [u'1992-10-26'],
+ 'conNum': 21,
+ 'crawlTime': '2017-09-22 16:14:37',
+ 'fansNum': 137,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva2.sinaimg.cn/crop.0.0.180.180.180/84f40a73jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'sister\u4f69\u4f69'],
+ 'place': [u'\u6cb3\u5317 \u90af\u90f8'],
+ 'sexori': [],
+ 'signature': [],
+ 'uid': '2230585971\n',
+ 'weiboNum': 104}
+2017-09-22 16:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1166642742/info> (referer: https://weibo.cn/u/1166642742)
+2017-09-22 16:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2654327881> (referer: None)
+2017-09-22 16:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1392955305/info>
+{'birthday': [u'0001-00-00'],
+ 'conNum': 38,
+ 'crawlTime': '2017-09-22 16:14:38',
+ 'fansNum': 12,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva1.sinaimg.cn/crop.0.0.180.180.180/5306cfa9jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u68a6\u8005\u901a\u884c'],
+ 'place': [u'\u6cb3\u5357'],
+ 'sexori': [],
+ 'signature': [u'\u68a6\uff0c\u662f\u5e0c\u671b'],
+ 'uid': '1392955305\n',
+ 'weiboNum': 93}
+2017-09-22 16:14:43 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-09-22 16:14:43 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "E:\sinaScrapy\sina\sina\spiders\infoSpider.py", line 114, in start_requests
+    time.sleep(request_interval)
+IOError: [Errno 4] Interrupted function call
+2017-09-22 16:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/2297534883/info> (referer: https://weibo.cn/u/2297534883)
+2017-09-22 16:14:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/2385053583> (referer: None)
+2017-09-22 16:14:43 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-09-22 16:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2713762311/info>
+{'birthday': [u'0001-00-00'],
+ 'conNum': 342,
+ 'crawlTime': '2017-09-22 16:14:39',
+ 'fansNum': 195,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tvax1.sinaimg.cn/crop.0.5.750.750.180/a1c0ba07ly8fd48nrl4zfj20ku0l4wft.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u545c\u5566\u5566\u9732\u5566\u5566'],
+ 'place': [u'\u5e7f\u4e1c \u6df1\u5733'],
+ 'sexori': [],
+ 'signature': [u'\u5403\u9971\u624d\u8212\u670d\uff01\U0001f44f\U0001f44f'],
+ 'uid': '2713762311\n',
+ 'weiboNum': 568}
+2017-09-22 16:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1166642742/info>
+{'birthday': [u'0001-00-00'],
+ 'conNum': 37,
+ 'crawlTime': '2017-09-22 16:14:40',
+ 'fansNum': 10,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva2.sinaimg.cn/crop.0.0.180.180.180/45898e36jw1e8qgp5bmzyj2050050aa8.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u5076\u7136_\u5fae\u535a'],
+ 'place': [u'\u6c5f\u82cf \u82cf\u5dde'],
+ 'sexori': [],
+ 'signature': [u'\u778e\u4e03\u642d\u516b'],
+ 'uid': '1166642742\n',
+ 'weiboNum': 335}
+2017-09-22 16:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/2297534883/info>
+{'birthday': [u'1996-02-01'],
+ 'conNum': 354,
+ 'crawlTime': '2017-09-22 16:14:41',
+ 'fansNum': 234,
+ 'gender': [u'\u7537'],
+ 'headUrl': u'http://tva4.sinaimg.cn/crop.0.0.750.750.180/88f199a3jw8f4ejpcef08j20ku0kuaba.jpg',
+ 'marriage': [],
+ 'nickName': [u'\u5c39\u6210-'],
+ 'place': [u'\u8d35\u5dde \u9075\u4e49'],
+ 'sexori': [],
+ 'signature': [u'\u6211\u5fc3\u6c38\u6a59'],
+ 'uid': '2297534883\n',
+ 'weiboNum': 12}
+2017-09-22 16:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/1772191093/info> (referer: https://weibo.cn/u/1772191093)
+2017-09-22 16:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://weibo.cn/1772191093/info>
+{'birthday': [u'\u6c34\u74f6\u5ea7'],
+ 'conNum': 1205,
+ 'crawlTime': '2017-09-22 16:14:42',
+ 'fansNum': 208,
+ 'gender': [u'\u5973'],
+ 'headUrl': u'http://tva3.sinaimg.cn/crop.0.0.664.664.180/69a17d75jw8f7c5wbfooqj20ig0ig0uv.jpg',
+ 'marriage': [],
+ 'nickName': [u'Balabalabiii'],
+ 'place': [u'\u5e7f\u4e1c \u6885\u5dde'],
+ 'sexori': [],
+ 'signature': [u'\ue41e\ue012\ue41e\ue012'],
+ 'uid': '1772191093\n',
+ 'weiboNum': 132}
+2017-09-22 16:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://weibo.cn/u/1448144082> (referer: None)
+2017-09-22 16:14:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 65659,
+ 'downloader/request_count': 63,
+ 'downloader/request_method_count/GET': 63,
+ 'downloader/response_bytes': 292547,
+ 'downloader/response_count': 63,
+ 'downloader/response_status_count/200': 63,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2017, 9, 22, 8, 14, 44, 549000),
+ 'item_scraped_count': 28,
+ 'log_count/DEBUG': 92,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'request_depth_max': 1,
+ 'response_received_count': 62,
+ 'scheduler/dequeued': 63,
+ 'scheduler/dequeued/memory': 63,
+ 'scheduler/enqueued': 67,
+ 'scheduler/enqueued/memory': 67,
+ 'start_time': datetime.datetime(2017, 9, 22, 8, 14, 4, 681000)}
+2017-09-22 16:14:44 [scrapy.core.engine] INFO: Spider closed (shutdown)

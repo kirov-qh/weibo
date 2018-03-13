@@ -1,0 +1,128 @@
+2017-10-05 11:54:36 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: weibocontent)
+2017-10-05 11:54:36 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'weibocontent.spiders', 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'RANDOMIZE_DOWNLOAD_DELAY': False, 'SPIDER_MODULES': ['weibocontent.spiders'], 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408, 414, 10060, 10061], 'BOT_NAME': 'weibocontent', 'DOWNLOAD_TIMEOUT': 3, 'COOKIES_ENABLED': False, 'RETRY_TIMES': 10, 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'LOG_FILE': 'weiboContentLog.log', 'DOWNLOAD_DELAY': 0.1}
+2017-10-05 11:54:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-10-05 11:54:36 [weibo] INFO: Reading start URLs from redis key 'weibo:user_url' (batch size: 16, encoding: utf-8
+2017-10-05 11:54:36 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-10-05 11:54:36 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python27\lib\site-packages\scrapy\crawler.py", line 95, in crawl
+    six.reraise(*exc_info)
+  File "C:\Python27\lib\site-packages\scrapy\crawler.py", line 77, in crawl
+    self.engine = self._create_engine()
+  File "C:\Python27\lib\site-packages\scrapy\crawler.py", line 102, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "C:\Python27\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "C:\Python27\lib\site-packages\scrapy\core\downloader\__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "C:\Python27\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "C:\Python27\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "C:\Python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\weibocontent\weibocontent_redis\weibocontent\weibocontent\middlewares.py", line 16, in <module>
+    from weibocontent.settings import IPPOOL_FILE_POSITION
+ImportError: cannot import name IPPOOL_FILE_POSITION
+2017-10-05 11:55:06 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: weibocontent)
+2017-10-05 11:55:06 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'weibocontent.spiders', 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'RANDOMIZE_DOWNLOAD_DELAY': False, 'SPIDER_MODULES': ['weibocontent.spiders'], 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408, 414, 10060, 10061], 'BOT_NAME': 'weibocontent', 'DOWNLOAD_TIMEOUT': 3, 'COOKIES_ENABLED': False, 'RETRY_TIMES': 10, 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'LOG_FILE': 'weiboContentLog.log', 'DOWNLOAD_DELAY': 0.1}
+2017-10-05 11:55:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-10-05 11:55:06 [weibo] INFO: Reading start URLs from redis key 'weibo:user_url' (batch size: 16, encoding: utf-8
+2017-10-05 11:55:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:06 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:07 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibocontent.middlewares.AgentMiddleware',
+ 'weibocontent.middlewares.IPMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-10-05 11:55:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-10-05 11:55:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['weibocontent.pipelines.WeibocontentPipeline']
+2017-10-05 11:55:10 [scrapy.core.engine] INFO: Spider opened
+2017-10-05 11:55:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-10-05 11:55:10 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-10-05 11:55:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:12 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:13 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:18 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-10-05 11:55:18 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-10-05 11:55:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2017, 10, 5, 3, 55, 18, 117000),
+ 'log_count/DEBUG': 33,
+ 'log_count/INFO': 9,
+ 'start_time': datetime.datetime(2017, 10, 5, 3, 55, 10, 612000)}
+2017-10-05 11:55:18 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2017-10-05 11:55:18 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): passport.weibo.cn
+2017-10-05 11:55:19 [urllib3.connectionpool] DEBUG: https://passport.weibo.cn:443 "GET /signin/login HTTP/1.1" 200 None
+2017-10-05 15:46:58 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: weibocontent)
+2017-10-05 15:46:58 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'weibocontent.spiders', 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'RANDOMIZE_DOWNLOAD_DELAY': False, 'SPIDER_MODULES': ['weibocontent.spiders'], 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408, 414, 10060, 10061], 'BOT_NAME': 'weibocontent', 'DOWNLOAD_TIMEOUT': 3, 'COOKIES_ENABLED': False, 'RETRY_TIMES': 10, 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'LOG_FILE': 'weiboContentLog.log', 'DOWNLOAD_DELAY': 0.1}
+2017-10-05 15:46:58 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-10-05 15:46:58 [weibo] INFO: Reading start URLs from redis key 'weibo:user_url' (batch size: 16, encoding: utf-8
